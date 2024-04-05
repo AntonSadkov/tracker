@@ -20,9 +20,8 @@ public class Triangle {
         if (exist(ab, ac, bc)) {
             double p = semiPerimeter(ab, ac, bc);
             return sqrt(p * (p - ab) * (p - ac) * (p - bc));
-        } else {
-            return -1;
         }
+        return -1;
     }
 
     private double semiPerimeter(double a, double b, double c) {
